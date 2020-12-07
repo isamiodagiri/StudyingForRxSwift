@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5758FE2E257BCC590086FF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FE2D257BCC590086FF26 /* AppDelegate.swift */; };
+		5758FE30257BCC590086FF26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FE2F257BCC590086FF26 /* SceneDelegate.swift */; };
+		5758FE37257BCC5A0086FF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5758FE36257BCC5A0086FF26 /* Assets.xcassets */; };
+		5758FE3A257BCC5A0086FF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5758FE38257BCC5A0086FF26 /* LaunchScreen.storyboard */; };
+		5758FE45257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FE44257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.swift */; };
+		5758FE50257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FE4F257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.swift */; };
+		5758FE62257BCD7A0086FF26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE61257BCD7A0086FF26 /* Alamofire */; };
+		5758FE68257BCDF50086FF26 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE67257BCDF50086FF26 /* RxSwift */; };
+		5758FE6A257BCDF50086FF26 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE69257BCDF50086FF26 /* RxCocoa */; };
+		5758FE70257BCE200086FF26 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE6F257BCE200086FF26 /* PKHUD */; };
+		5758FE76257BCE370086FF26 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE75257BCE370086FF26 /* ObjectMapper */; };
+		5758FE7C257BCE680086FF26 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 5758FE7B257BCE680086FF26 /* Nuke */; };
+		5758FE9A257BDF340086FF26 /* AreaList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5758FE99257BDF340086FF26 /* AreaList.storyboard */; };
+		5758FE9F257BDF7C0086FF26 /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FE9E257BDF7C0086FF26 /* AreaListViewController.swift */; };
+		5758FEC1257C979D0086FF26 /* AreaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FEC0257C979D0086FF26 /* AreaListViewModel.swift */; };
+		5758FEC6257C99510086FF26 /* ModelAreaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FEC5257C99510086FF26 /* ModelAreaData.swift */; };
+		5758FECF257CAD5A0086FF26 /* AreaListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FECE257CAD5A0086FF26 /* AreaListUseCase.swift */; };
+		5758FEDC257CAE860086FF26 /* cityList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5758FEDB257CAE860086FF26 /* cityList.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5758FE41257BCC5A0086FF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5758FE22257BCC590086FF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5758FE29257BCC590086FF26;
+			remoteInfo = TenkiAPIForRxSwift;
+		};
+		5758FE4C257BCC5A0086FF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5758FE22257BCC590086FF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5758FE29257BCC590086FF26;
+			remoteInfo = TenkiAPIForRxSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5758FE2A257BCC590086FF26 /* TenkiAPIForRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenkiAPIForRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5758FE2D257BCC590086FF26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5758FE2F257BCC590086FF26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5758FE36257BCC5A0086FF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5758FE39257BCC5A0086FF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5758FE3B257BCC5A0086FF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5758FE40257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiAPIForRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5758FE44257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiAPIForRxSwiftTests.swift; sourceTree = "<group>"; };
+		5758FE46257BCC5A0086FF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5758FE4B257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiAPIForRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5758FE4F257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiAPIForRxSwiftUITests.swift; sourceTree = "<group>"; };
+		5758FE51257BCC5A0086FF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5758FE99257BDF340086FF26 /* AreaList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AreaList.storyboard; sourceTree = "<group>"; };
+		5758FE9E257BDF7C0086FF26 /* AreaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewController.swift; sourceTree = "<group>"; };
+		5758FEC0257C979D0086FF26 /* AreaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewModel.swift; sourceTree = "<group>"; };
+		5758FEC5257C99510086FF26 /* ModelAreaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAreaData.swift; sourceTree = "<group>"; };
+		5758FECE257CAD5A0086FF26 /* AreaListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListUseCase.swift; sourceTree = "<group>"; };
+		5758FEDB257CAE860086FF26 /* cityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityList.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5758FE27257BCC590086FF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE6A257BCDF50086FF26 /* RxCocoa in Frameworks */,
+				5758FE76257BCE370086FF26 /* ObjectMapper in Frameworks */,
+				5758FE70257BCE200086FF26 /* PKHUD in Frameworks */,
+				5758FE7C257BCE680086FF26 /* Nuke in Frameworks */,
+				5758FE68257BCDF50086FF26 /* RxSwift in Frameworks */,
+				5758FE62257BCD7A0086FF26 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE3D257BCC5A0086FF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE48257BCC5A0086FF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5758FE21257BCC590086FF26 = {
+			isa = PBXGroup;
+			children = (
+				5758FE2C257BCC590086FF26 /* TenkiAPIForRxSwift */,
+				5758FE43257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests */,
+				5758FE4E257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests */,
+				5758FE2B257BCC590086FF26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5758FE2B257BCC590086FF26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5758FE2A257BCC590086FF26 /* TenkiAPIForRxSwift.app */,
+				5758FE40257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.xctest */,
+				5758FE4B257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5758FE2C257BCC590086FF26 /* TenkiAPIForRxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5758FECD257CAD360086FF26 /* UseCase */,
+				5758FEA4257BE0580086FF26 /* Model */,
+				5758FE80257BDCE90086FF26 /* UI */,
+				5758FE2D257BCC590086FF26 /* AppDelegate.swift */,
+				5758FE2F257BCC590086FF26 /* SceneDelegate.swift */,
+				5758FE36257BCC5A0086FF26 /* Assets.xcassets */,
+				5758FE38257BCC5A0086FF26 /* LaunchScreen.storyboard */,
+				5758FE3B257BCC5A0086FF26 /* Info.plist */,
+				5758FEDB257CAE860086FF26 /* cityList.json */,
+			);
+			path = TenkiAPIForRxSwift;
+			sourceTree = "<group>";
+		};
+		5758FE43257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5758FE44257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.swift */,
+				5758FE46257BCC5A0086FF26 /* Info.plist */,
+			);
+			path = TenkiAPIForRxSwiftTests;
+			sourceTree = "<group>";
+		};
+		5758FE4E257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5758FE4F257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.swift */,
+				5758FE51257BCC5A0086FF26 /* Info.plist */,
+			);
+			path = TenkiAPIForRxSwiftUITests;
+			sourceTree = "<group>";
+		};
+		5758FE80257BDCE90086FF26 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5758FE81257BDD150086FF26 /* AreaList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5758FE81257BDD150086FF26 /* AreaList */ = {
+			isa = PBXGroup;
+			children = (
+				5758FE99257BDF340086FF26 /* AreaList.storyboard */,
+				5758FE9E257BDF7C0086FF26 /* AreaListViewController.swift */,
+				5758FEC0257C979D0086FF26 /* AreaListViewModel.swift */,
+			);
+			path = AreaList;
+			sourceTree = "<group>";
+		};
+		5758FEA4257BE0580086FF26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5758FEC5257C99510086FF26 /* ModelAreaData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5758FECD257CAD360086FF26 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5758FECE257CAD5A0086FF26 /* AreaListUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5758FE29257BCC590086FF26 /* TenkiAPIForRxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5758FE54257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwift" */;
+			buildPhases = (
+				5758FE26257BCC590086FF26 /* Sources */,
+				5758FE27257BCC590086FF26 /* Frameworks */,
+				5758FE28257BCC590086FF26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenkiAPIForRxSwift;
+			packageProductDependencies = (
+				5758FE61257BCD7A0086FF26 /* Alamofire */,
+				5758FE67257BCDF50086FF26 /* RxSwift */,
+				5758FE69257BCDF50086FF26 /* RxCocoa */,
+				5758FE6F257BCE200086FF26 /* PKHUD */,
+				5758FE75257BCE370086FF26 /* ObjectMapper */,
+				5758FE7B257BCE680086FF26 /* Nuke */,
+			);
+			productName = TenkiAPIForRxSwift;
+			productReference = 5758FE2A257BCC590086FF26 /* TenkiAPIForRxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5758FE3F257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5758FE57257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwiftTests" */;
+			buildPhases = (
+				5758FE3C257BCC5A0086FF26 /* Sources */,
+				5758FE3D257BCC5A0086FF26 /* Frameworks */,
+				5758FE3E257BCC5A0086FF26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5758FE42257BCC5A0086FF26 /* PBXTargetDependency */,
+			);
+			name = TenkiAPIForRxSwiftTests;
+			productName = TenkiAPIForRxSwiftTests;
+			productReference = 5758FE40257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5758FE4A257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5758FE5A257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwiftUITests" */;
+			buildPhases = (
+				5758FE47257BCC5A0086FF26 /* Sources */,
+				5758FE48257BCC5A0086FF26 /* Frameworks */,
+				5758FE49257BCC5A0086FF26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5758FE4D257BCC5A0086FF26 /* PBXTargetDependency */,
+			);
+			name = TenkiAPIForRxSwiftUITests;
+			productName = TenkiAPIForRxSwiftUITests;
+			productReference = 5758FE4B257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5758FE22257BCC590086FF26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5758FE29257BCC590086FF26 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					5758FE3F257BCC5A0086FF26 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5758FE29257BCC590086FF26;
+					};
+					5758FE4A257BCC5A0086FF26 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5758FE29257BCC590086FF26;
+					};
+				};
+			};
+			buildConfigurationList = 5758FE25257BCC590086FF26 /* Build configuration list for PBXProject "TenkiAPIForRxSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5758FE21257BCC590086FF26;
+			packageReferences = (
+				5758FE60257BCD7A0086FF26 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5758FE66257BCDF50086FF26 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				5758FE6E257BCE200086FF26 /* XCRemoteSwiftPackageReference "PKHUD" */,
+				5758FE74257BCE370086FF26 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				5758FE7A257BCE680086FF26 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
+			productRefGroup = 5758FE2B257BCC590086FF26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5758FE29257BCC590086FF26 /* TenkiAPIForRxSwift */,
+				5758FE3F257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests */,
+				5758FE4A257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5758FE28257BCC590086FF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE3A257BCC5A0086FF26 /* LaunchScreen.storyboard in Resources */,
+				5758FE9A257BDF340086FF26 /* AreaList.storyboard in Resources */,
+				5758FEDC257CAE860086FF26 /* cityList.json in Resources */,
+				5758FE37257BCC5A0086FF26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE3E257BCC5A0086FF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE49257BCC5A0086FF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5758FE26257BCC590086FF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE2E257BCC590086FF26 /* AppDelegate.swift in Sources */,
+				5758FECF257CAD5A0086FF26 /* AreaListUseCase.swift in Sources */,
+				5758FE30257BCC590086FF26 /* SceneDelegate.swift in Sources */,
+				5758FE9F257BDF7C0086FF26 /* AreaListViewController.swift in Sources */,
+				5758FEC6257C99510086FF26 /* ModelAreaData.swift in Sources */,
+				5758FEC1257C979D0086FF26 /* AreaListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE3C257BCC5A0086FF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE45257BCC5A0086FF26 /* TenkiAPIForRxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE47257BCC5A0086FF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE50257BCC5A0086FF26 /* TenkiAPIForRxSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5758FE42257BCC5A0086FF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5758FE29257BCC590086FF26 /* TenkiAPIForRxSwift */;
+			targetProxy = 5758FE41257BCC5A0086FF26 /* PBXContainerItemProxy */;
+		};
+		5758FE4D257BCC5A0086FF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5758FE29257BCC590086FF26 /* TenkiAPIForRxSwift */;
+			targetProxy = 5758FE4C257BCC5A0086FF26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5758FE38257BCC5A0086FF26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5758FE39257BCC5A0086FF26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5758FE52257BCC5A0086FF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5758FE53257BCC5A0086FF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5758FE55257BCC5A0086FF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5758FE56257BCC5A0086FF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5758FE58257BCC5A0086FF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenkiAPIForRxSwift.app/TenkiAPIForRxSwift";
+			};
+			name = Debug;
+		};
+		5758FE59257BCC5A0086FF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenkiAPIForRxSwift.app/TenkiAPIForRxSwift";
+			};
+			name = Release;
+		};
+		5758FE5B257BCC5A0086FF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenkiAPIForRxSwift;
+			};
+			name = Debug;
+		};
+		5758FE5C257BCC5A0086FF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5N58WKMLX;
+				INFOPLIST_FILE = TenkiAPIForRxSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.TenkiAPIForRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenkiAPIForRxSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5758FE25257BCC590086FF26 /* Build configuration list for PBXProject "TenkiAPIForRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5758FE52257BCC5A0086FF26 /* Debug */,
+				5758FE53257BCC5A0086FF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5758FE54257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5758FE55257BCC5A0086FF26 /* Debug */,
+				5758FE56257BCC5A0086FF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5758FE57257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5758FE58257BCC5A0086FF26 /* Debug */,
+				5758FE59257BCC5A0086FF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5758FE5A257BCC5A0086FF26 /* Build configuration list for PBXNativeTarget "TenkiAPIForRxSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5758FE5B257BCC5A0086FF26 /* Debug */,
+				5758FE5C257BCC5A0086FF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5758FE60257BCD7A0086FF26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		5758FE66257BCDF50086FF26 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		5758FE6E257BCE200086FF26 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		5758FE74257BCE370086FF26 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		5758FE7A257BCE680086FF26 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5758FE61257BCD7A0086FF26 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE60257BCD7A0086FF26 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5758FE67257BCDF50086FF26 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE66257BCDF50086FF26 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		5758FE69257BCDF50086FF26 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE66257BCDF50086FF26 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		5758FE6F257BCE200086FF26 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE6E257BCE200086FF26 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+		5758FE75257BCE370086FF26 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE74257BCE370086FF26 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		5758FE7B257BCE680086FF26 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5758FE7A257BCE680086FF26 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5758FE22257BCC590086FF26 /* Project object */;
+}
